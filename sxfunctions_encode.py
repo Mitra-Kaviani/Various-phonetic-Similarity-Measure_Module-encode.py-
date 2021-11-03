@@ -1887,19 +1887,7 @@ if (__name__ == '__main__'):
 import csv
 import pandas as pd
 #------------------------------------------
-#training_data_location = r'C:/Users/Mitra/Desktop/nonmatches.csv'
-#with open(training_data_location) as tsv:
-#    i = 0
-#    for line in csv.reader(tsv):
-#---------------------------------- in order to calculte soundex code for string in column 1 and column 2: soundex(line[1],maxlen=4) and soundex (line[0],maxlen=4) respectivly 
-        #print soundex(line[1],maxlen=4)
-        #print phonex(line[1], maxlen=4)
-        #print phonix(line[1], maxlen=4)
-        #print  nysiis(line[1], maxlen=4)
-        #print  dmetaphone(line[1], maxlen=4)   
-        #print fuzzy_soundex(line[1], maxlen=4)
-        #-------mod-soundex technique---not repoted
-        #print mod_soundex(line[1], maxlen=4)
+
 def Soundex (df): 
     n1 = list(df)[0] #first string label
     n2 = list(df)[1] #second string label
@@ -1957,9 +1945,3 @@ def FuzSoundex (df):
         df.loc[i,'FuzSoundex1']=fuzzy_soundex(str(df.loc[i,n1]),maxlen=4)
         df.loc[i,'FuzSoundex2']=fuzzy_soundex(str(df.loc[i,n2]),maxlen=4) 
     return df
-
-  
-##df1 = pd.read_csv('C:/Users/Mitra/Desktop/dataset3_FNS_MITRA - Copy.csv', sep=',', skipinitialspace=True)
-##df1= FuzSoundex (df1)
-##print (df1)
-
