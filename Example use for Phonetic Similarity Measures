@@ -1,0 +1,21 @@
+# =============================================================================
+#example 1:  
+##df = pd.read_csv('C:/......csv', sep=',', skipinitialspace=True)
+##df= FuzSoundex (df)
+##print (df)
+# =============================================================================
+#example 2:
+#training_data_location = r'C:/...../nonmatches.csv'
+#with open(training_data_location) as tsv:
+#    i = 0
+#    for line in csv.reader(tsv):
+#---------------------------------- in order to calculte soundex code for string in column 1 and column 2: soundex(line[1],maxlen=4) and soundex (line[0],maxlen=4) respectivly 
+        #print soundex(line[1],maxlen=4)
+        #print phonex(line[1], maxlen=4)
+        #print phonix(line[1], maxlen=4)
+        #print  nysiis(line[1], maxlen=4)
+        #print  dmetaphone(line[1], maxlen=4)   
+        #print fuzzy_soundex(line[1], maxlen=4)
+        #-------mod-soundex technique---not repoted
+        #print mod_soundex(line[1], maxlen=4)
+# =============================================================================
